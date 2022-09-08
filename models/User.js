@@ -1,6 +1,6 @@
 class User {
 
-    constructor(name, gender, birth, country, email, password, photo, admin){
+    constructor(name, gender, birth, country, email, password, photo, admin,register){
 
         this._name = name;
         this._gender = gender;
@@ -10,13 +10,13 @@ class User {
         this._password = password;
         this._photo = photo;
         this._admin = admin;
-        this._register = new Date().getDate();
+        this._register = new Date();
 
     }
 
     
 
-    get register(){ //GET É CONSULTA
+    get register(){ //GET É CONSULTA SET É DEFINIR
         return this._register;
     }
 
